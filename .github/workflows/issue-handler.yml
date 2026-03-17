@@ -10,5 +10,7 @@ jobs:
            - name: Echo basic event details
              run: |
                echo "Event name: ${{ toJson(github.event) }}"
+           - name: check is triggere or not
+             run: echo "event triggere on pull request"
         
 
